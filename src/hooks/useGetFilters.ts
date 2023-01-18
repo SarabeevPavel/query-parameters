@@ -1,18 +1,7 @@
-import { useGetCategories } from "./useGetCategories"
 import { DataItem, Filter } from "../utils/types"
 
 export const useGetFilters = (data: DataItem[]) => {
-  //   const categories = useGetCategories(data)
-  //   const [filters, setFilters] = useState<Filter[] | []>([])
   const filters: Filter[] = []
-
-  //   categories.forEach((category) => {
-  //     if (category !== "title") {
-  //       Object.assign(filters, {
-  //         [category]: data.map((item) => item),
-  //       })
-  //     }
-  //   })
 
   data.forEach((item) =>
     Object.entries(item).forEach(
